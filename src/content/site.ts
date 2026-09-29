@@ -5,6 +5,9 @@
  * contact info, service copy and imagery. Values marked `PLACEHOLDER` must be
  * replaced with real company information before launch.
  *
+ * robots.txt, sitemap.xml and llms.txt are generated from this file at build
+ * time (see /site-files.ts), so they update automatically when it changes.
+ *
  * Imagery: temporary photography is sourced from Unsplash (https://unsplash.com/license —
  * free for commercial use, no permission needed). Swap any `src` for a local file
  * (e.g. "/images/projects/courtyard.jpg" placed in /public) or another permitted URL.
@@ -29,7 +32,8 @@ export const brand = {
   tagline: 'Landscape design, build & care',
   description:
     'Landscape design, garden installation and ongoing care for homes and outdoor spaces — crafted with patience, precision and respect for nature.',
-  siteUrl: 'https://www.example.com', // PLACEHOLDER — production URL (used for SEO metadata)
+  /** Production URL, no trailing slash. Used for SEO metadata, robots.txt, sitemap.xml and llms.txt. */
+  siteUrl: 'https://www.perfectedgelandscapes.com.au',
 }
 
 export const contact = {
