@@ -39,6 +39,8 @@ export function setScrollLocked(locked: boolean) {
 export function scrollToTarget(target: string | HTMLElement) {
   const el = typeof target === 'string' ? document.querySelector<HTMLElement>(target) : target
   if (!el) return
+  // Navigating from the open mobile menu: release the scroll lock first.
+  if (document.documentElement.classList.contains('scroll-locked')) setScrollLocked(false)
   if (lenis) lenis.scrollTo(el, { offset: 0, duration: 1.6 })
   else el.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth' })
   // Move focus for keyboard & screen-reader users without a second jump.
