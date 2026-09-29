@@ -24,8 +24,8 @@ const unsplash = (id: string, alt: string, focus?: string): SiteImage => ({
 })
 
 export const brand = {
-  name: 'Verdant & Stone', // PLACEHOLDER — company name
-  shortName: 'Verdant',
+  name: 'Perfect Edge Landscapes',
+  shortName: 'Perfect Edge',
   tagline: 'Landscape design, build & care',
   description:
     'Landscape design, garden installation and ongoing care for homes and outdoor spaces — crafted with patience, precision and respect for nature.',
@@ -33,14 +33,17 @@ export const brand = {
 }
 
 export const contact = {
-  phone: '+1 (555) 010-0000', // PLACEHOLDER
-  phoneHref: 'tel:+15550100000', // PLACEHOLDER
-  email: 'hello@example.com', // PLACEHOLDER
-  location: 'Your City, Region', // PLACEHOLDER
-  serviceArea: 'Serving homes and businesses across the region', // PLACEHOLDER
-  hours: 'Mon – Sat · 8:00 – 18:00', // PLACEHOLDER
-  /** International format, digits only. Leave empty to hide WhatsApp. */
-  whatsapp: '15550100000', // PLACEHOLDER
+  phone: '+61 452 642 233',
+  phoneHref: 'tel:+61452642233',
+  email: 'perfectedgelandscapessydney@gmail.com',
+  location: 'Liverpool & South-West Sydney, NSW, Australia',
+  serviceArea: 'Serving homes and businesses across South-West Sydney',
+  hours: 'Open 24 hours',
+  /**
+   * International format, digits only (e.g. '61452642233'). Leave empty to hide WhatsApp.
+   * Hidden until the business confirms a WhatsApp number.
+   */
+  whatsapp: '',
   /**
    * Optional form endpoint (Formspree, Netlify, your own API…). Receives a JSON POST.
    * When empty, the form falls back to opening the visitor's email client.

@@ -1148,6 +1148,11 @@
 .contact__details a {
   transition: color 0.3s;
 }
+/* Let long values (e.g. email addresses) wrap instead of overflowing on small screens. */
+.contact__details li > * > span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 @media (hover: hover) {
   .contact__details a:hover {
     color: var(--c-moss);
@@ -1352,6 +1357,7 @@
   font-size: 0.93rem;
 }
 .footer a {
+  overflow-wrap: anywhere;
   transition: color 0.3s;
 }
 @media (hover: hover) {
