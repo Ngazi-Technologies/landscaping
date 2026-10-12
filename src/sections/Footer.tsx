@@ -47,6 +47,12 @@ export function Footer() {
       </div>
       <div className="container footer__base">
         <span>© {new Date().getFullYear()} {brand.name}. All rights reserved.</span>
+        <span>
+          Proudly made by{' '}
+          <a href="https://www.ngazi.co.ke/contact" target="_blank" rel="noopener noreferrer">
+            Ngazi
+          </a>
+        </span>
         <a href="#top" onClick={go('#top')}>Back to top ↑</a>
       </div>
     </footer>
